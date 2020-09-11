@@ -16,13 +16,13 @@ maintainers:
   - name: alexnuttinck
     email: alexandre.nuttinck@cetic.be
     url: https://github.com/alexnuttinck
-#dependencies:
-#  - name: zookeeper
-#    version: 2.1.1
-#    repository: https://kubernetes-charts-incubator.storage.googleapis.com/
-#    condition: zookeeper.enabled
-#  - name: nifi-registry
-#    alias: registry
-#    version: 0.1.0
-#    repository: https://dysnix.github.io/charts/
-#    condition: registry.enabled
+dependencies:
+  - name: zookeeper
+    version: 2.1.1
+    repository: https://kubernetes-charts-incubator.storage.googleapis.com/
+    condition: zookeeper.enabled
+  - name: nifi-registry
+    alias: registry
+    version: 0.1.0
+    repository: https://dysnix.github.io/charts/
+    condition: registry.enabled
