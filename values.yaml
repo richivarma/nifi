@@ -10,8 +10,8 @@ replicaCount: 1
 ## ref: https://hub.docker.com/r/apache/nifi/
 ##
 image:
-  repository: localhost:5000/nifi
-  tag: "1.11.3.2"
+  repository: apache/nifi
+  tag: "1.11.4"
   pullPolicy: IfNotPresent
 
   ## Optionally specify an imagePullSecret.
