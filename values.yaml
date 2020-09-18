@@ -1,7 +1,7 @@
 ---
 global:
   registry:
-    url: localhost:5000
+    url: nonrtr.azurecr.io
     
 # Number of nifi nodes
 replicaCount: 1
@@ -10,7 +10,7 @@ replicaCount: 1
 ## ref: https://hub.docker.com/r/apache/nifi/
 ##
 image:
-  repository: localhost:5000/nifi
+  repository: nonrtr.azurecr.io/proj-nonrtric-ci/apache-nifi
   tag: "1.11.3.5"
   pullPolicy: IfNotPresent
 
@@ -156,7 +156,7 @@ persistence:
   # storageClass: standard
   #
   # The default storage class is used if this variable is not set.
-  storageClass: nfs-client
+  storageClass: default
   
   accessModes:  [ReadWriteOnce]
   ## Storage Capacities for persistent volumes
