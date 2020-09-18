@@ -230,7 +230,7 @@ env: []
 zookeeper:
   ## If true, install the Zookeeper chart
   ## ref: https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
-  enabled: false
+  enabled: true
   ## If the Zookeeper Chart is disabled a URL and port are required to connect
   url: ""
   port: 2181
@@ -240,7 +240,7 @@ zookeeper:
 # ------------------------------------------------------------------------------
 registry:
   ## If true, install the Nifi registry
-  enabled: false
+  enabled: true
   url: ""
   port: 80
   ## Add values for the nifi-registry here
