@@ -11,7 +11,7 @@ replicaCount: 1
 ##
 image:
   repository: nonrtr.azurecr.io/proj-nonrtric-ci/apache-nifi
-  tag: "1.11.3.5"
+  tag: "1.11.3.6"
   pullPolicy: IfNotPresent
 
   ## Optionally specify an imagePullSecret.
